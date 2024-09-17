@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="PUGS: Perceptual Uncertainty for Grasp Selection.">
+  <meta name="description" content="PUGS: Perceptual Uncertainty for Grasp Selection.">
   <meta name="keywords" content="PUGS">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>&#x1F62BPUGS: Perceptual Uncertainty for Grasp Selection.</title>
@@ -21,15 +21,13 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
@@ -39,67 +37,68 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <!-- <a class="navbar-item" href="https://keunhong.com">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <!-- <a class="navbar-item" href="https://keunhong.com">
       <span class="icon">
           <i class="fas fa-home"></i>
       </span>
       </a> -->
 
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research from contributors
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://depts.washington.edu/uwaplopal/">
-            Ocean Perception and Autonomy Lab At University of Washington APL
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research from contributors
           </a>
-          <a class="navbar-item" href="https://fieldrobotics.engin.umich.edu/research">
-            Field Robotics Group at University of Michigan
-          </a>
-          <!-- <a class="navbar-item" href="https://latentfusion.github.io">
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://depts.washington.edu/uwaplopal/">
+              Ocean Perception and Autonomy Lab At University of Washington APL
+            </a>
+            <a class="navbar-item" href="https://fieldrobotics.engin.umich.edu/research">
+              Field Robotics Group at University of Michigan
+            </a>
+            <!-- <a class="navbar-item" href="https://latentfusion.github.io">
             LatentFusion
           </a>
           <a class="navbar-item" href="https://photoshape.github.io">
             PhotoShape
           </a> -->
+          </div>
         </div>
       </div>
+
     </div>
-
-  </div>
-</nav>
+  </nav>
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-           <!-- use smaller title size -->
-          <h1 class="title is-3 publication-title">&#128034PUGS: Perceptual Uncertainty for Grasp Selection.</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://www.obagoren.com/">Onur Bagoren</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://www.marcmicatcka.com/">Marc Micatka</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://fieldrobotics.engin.umich.edu/">Katherine A. Skinner</a><sup>1</sup>
-            <span class="author-block">
-              <a href="https://fieldrobotics.engin.umich.edu/">Aaron Marburg</a><sup>2</sup>
-            </span>
-            <!-- <span class="author-block">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- use smaller title size -->
+            <h1 class="title is-3 publication-title">&#128034PUGS: Perceptual Uncertainty for Grasp Selection.</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://www.obagoren.com/">Onur Bagoren</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.marcmicatcka.com/">Marc Micatka</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://fieldrobotics.engin.umich.edu/">Katherine A. Skinner</a><sup>1</sup>
+                <span class="author-block">
+                  <a href="https://fieldrobotics.engin.umich.edu/">Aaron Marburg</a><sup>2</sup>
+                </span>
+                <!-- <span class="author-block">
               <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
             </span>
             <span class="author-block">
@@ -111,27 +110,26 @@
             <span class="author-block">
               <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
             </span> -->
-          </div>
+            </div>
 
-          <div class="is-size-5 publication-authors">
-            <!-- <span class="author-block"><sup>†</sup>Corresponding Author</span> -->
-            <span class="author-block"><sup>1</sup>University of Michigan</span>
-            <span class="author-block"><sup>2</sup>University of Washing Applied Physics Lab</span>
-          </div>
+            <div class="is-size-5 publication-authors">
+              <!-- <span class="author-block"><sup>†</sup>Corresponding Author</span> -->
+              <span class="author-block"><sup>1</sup>University of Michigan</span>
+              <span class="author-block"><sup>2</sup>University of Washing Applied Physics Lab</span>
+            </div>
 
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/2408.01569"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2408.01569" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper (coming soon)</span>
-                </a>
-              </span>
-              <!-- <span class="link-block">
+                    </span>
+                    <span>Paper (coming soon)</span>
+                  </a>
+                </span>
+                <!-- <span class="link-block">
                 <a href="https://arxiv.org/abs/2408.01569"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -140,28 +138,28 @@
                   <span>arXiv</span>
                 </a>
               </span> -->
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://youtu.be/ensndBa2L9g?si=sy2iCFCpo7xffcGb"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://youtu.be/ensndBa2L9g?si=sy2iCFCpo7xffcGb"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video (coming soon)</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://gitlab.com/apl-ocean-engineering/raven/manipulation"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
+                    </span>
+                    <span>Video (coming soon)</span>
                   </a>
-              </span>
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://gitlab.com/apl-ocean-engineering/raven/manipulation"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -171,31 +169,31 @@
                   </a>
             </div> -->
 
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
         <source src="./static/videos/teaser.mp4"
                 type="video/mp4">
       </video> -->
-      <!-- add image docs/static/images/pitch.svg-->
-      <h2 class="subtitle has-text-centered">
-        We present PUGS, an occupancy uncertainty estimation method used for uncderwater grasp selection.
-      </h2>
-      <img src="./static/images/marc_figure_vis_new.png" alt="PUGS" style="width: 100%; height: auto;">
+        <!-- add image docs/static/images/pitch.svg-->
+        <h2 class="subtitle has-text-centered">
+          We present PUGS, an occupancy uncertainty estimation method used for uncderwater grasp selection.
+        </h2>
+        <img src="./static/images/marc_figure_vis_new.png" alt="PUGS" style="width: 100%; height: auto;">
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- <section class="hero is-light is-small">
+  <!-- <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
@@ -253,25 +251,31 @@
 </section> -->
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          When navigating and interacting in challenging environments where sensory information is imperfect and incomplete, robots must make decisions that account for these shortcomings. 
-          We propose a novel method for quantifying and representing such perceptual uncertainty in 3D reconstruction through occupancy uncertainty estimation. 
-          We develop a framework to incorporate it into grasp selection for autonomous manipulation in underwater environments. 
-          Instead of treating each measurement equally when deciding which location to grasp from, we present a framework that propagates uncertainty inherent in the multi-view reconstruction process into the grasp selection.
-          We evaluate our method with both simulated and the real world data, showing that by accounting for uncertainty, the grasp selection becomes robust against partial and noisy measurements.
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            When navigating and interacting in challenging environments where sensory information is imperfect and
+            incomplete, robots must make decisions that account for these shortcomings.
+            We propose a novel method for quantifying and representing such perceptual uncertainty in 3D reconstruction
+            through occupancy uncertainty estimation.
+            We develop a framework to incorporate it into grasp selection for autonomous manipulation in underwater
+            environments.
+            Instead of treating each measurement equally when deciding which location to grasp from, we present a
+            framework that propagates uncertainty inherent in the multi-view reconstruction process into the grasp
+            selection.
+            We evaluate our method with both simulated and the real world data, showing that by accounting for
+            uncertainty, the grasp selection becomes robust against partial and noisy measurements.
+          </div>
         </div>
       </div>
-    </div>
-    <!--/ Abstract. -->
+      <!--/ Abstract. -->
 
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
+      <!-- Paper video. -->
+      <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
@@ -280,37 +284,37 @@
         </div>
       </div>
     </div> -->
-    <!--/ Paper video. -->
-  </div>
-</section>
+      <!--/ Paper video. -->
+    </div>
+  </section>
 
-<!-- Overview section -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Overview</h2>
-        <div class="content has-text-justified">
-          <p>
-            We propose the construction of a fused occupancy field (FOF) informed by the uncertainty in measurements and pose estimates.          </p>
-          <p>
-            We develop a novel method to quantify the predictive uncertainty associated with occupancy in 3D space using probabilistic regression methods.          </p>
-          <p>
-            A fusion mechanism is developed to combine information from measurement and predictive uncertainty for modeling occupancy uncertainty.          </p>
-          <p>
-            We provide an experimental evaluation in both simulation and real-world underwater environments to validate the proposed methods.         </p>
+  <!-- Overview section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Overview</h2>
+          <div class="content has-text-justified">
+            <p>
+              We focus on modeling how uncertainty inherent from multi-view stereo can be leveraged for quantifying uncertainty in 3D reconstruction, specifically in representing occupancy in 3D space. 
+              These uncertainties of the occupied regions can then be a useful for improving existing grasp selection methods and guiding toward more reliable and robust grasp selection
+              We propose the construction of a fused occupancy field (FOF) informed by the uncertainty in measurements and pose estimates. 
+              We then develop a novel method to quantify the predictive uncertainty associated with occupancy in 3D space
+              using probabilistic regression methods. A fusion mechanism is developed to combine information from measurement and predictive uncertainty for
+              modeling occupancy uncertainty. We provide an experimental evaluation in both simulation and real-world underwater environments to
+              validate the proposed methods. </p>
+          </div>
         </div>
       </div>
+      <!-- add an image docs/static/images/Overall_Diagram.svg -->
+      <img src="./static/images/system_overview.png" alt="PUGS Overview" style="width: 100%; height: auto;">
     </div>
-    <!-- add an image docs/static/images/Overall_Diagram.svg -->
-    <img src="./static/images/Overall_Diagram.svg" alt="TURTLMap Overview" style="width: 100%; height: auto;">
-  </div>
-</section>
+  </section>
 
-<!-- Results section -->
+  <!-- Results section -->
 
 
-<!-- 
+  <!-- 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
@@ -323,22 +327,23 @@
   </div>
 </section> -->
 
-<!-- cite nerfies project page https://github.com/nerfies/nerfies.github.io -->
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This page is modified based on <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
-          </p>
+  <!-- cite nerfies project page https://github.com/nerfies/nerfies.github.io -->
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page is modified based on <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
