@@ -151,7 +151,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/umfieldrobotics/TURTLMap"
+                <a href="https://github.com/onurbagoren/PUGS"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -180,15 +180,15 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
+      <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
         <source src="./static/videos/teaser.mp4"
                 type="video/mp4">
-      </video>
+      </video> -->
       <!-- add image docs/static/images/pitch.svg-->
       <h2 class="subtitle has-text-centered">
-        We present <strong>TURTLMap</strong>, a novel solution that focuses on <strong>T</strong>extureless <strong>U</strong>nderwater environments through a <strong>R</strong>eal-<strong>T</strong>ime <strong>L</strong>ocalization and <strong>Map</strong>ping method.
+        We present PUGS, an occupancy uncertainty estimation method used for uncderwater grasp selection.
       </h2>
-      <img src="./static/images/pitch.jpg" alt="TURTLMap" style="width: 100%; height: auto;">
+      <!-- <img src="./static/images/pitch.jpg" alt="TURTLMap" style="width: 100%; height: auto;"> -->
     </div>
   </div>
 </section>
@@ -259,11 +259,11 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          Significant work has been done on advancing localization and mapping in underwater environments.
-          Still, state-of-the-art methods are challenged by low-texture environments, which is common for underwater settings. This makes it difficult to use existing methods in diverse, real-world scenes.
-          In this paper, we present TURTLMap, a novel solution that focuses on Textureless Underwater environments through a Real-Time Localization and Mapping method.
-          We show that this method is low-cost, and capable of tracking the robot accurately, while constructing a dense map of a low-textured environment in real-time.
-          We evaluate the proposed method using real-world data collected in an indoor water tank with a motion capture system and ground truth map reference. Qualitative and quantitative results validate the proposed system achieves accurate and robust localization and precise dense mapping, even when subject to wave conditions.
+          When navigating and interacting in challenging environments where sensory information is imperfect and incomplete, robots must make decisions that account for these shortcomings. 
+          We propose a novel method for quantifying and representing such perceptual uncertainty in 3D reconstruction through occupancy uncertainty estimation. 
+          We develop a framework to incorporate it into grasp selection for autonomous manipulation in underwater environments. 
+          Instead of treating each measurement equally when deciding which location to grasp from, we present a framework that propagates uncertainty inherent in the multi-view reconstruction process into the grasp selection.
+          We evaluate our method with both simulated and the real world data, showing that by accounting for uncertainty, the grasp selection becomes robust against partial and noisy measurements.
         </div>
       </div>
     </div>
@@ -291,13 +291,13 @@
         <h2 class="title is-3">Overview</h2>
         <div class="content has-text-justified">
           <p>
-            We propose a pose graph-based DVL-inertial-barometer localization package that achieves improved localization accuracy in low-texture regions.
-          </p>
+            We propose the construction of a fused occupancy field (FOF) informed by the uncertainty in measurements and pose estimates.          </p>
           <p>
-            With the proposed localization package and a real-time volumetric mapping package, we demonstrate real-time and accurate dense mapping on an onboard embedded computer on a low-cost UUV with a downward-facing stereo camera in a low-texture underwater environment.
-          </p>
+            We develop a novel method to quantify the predictive uncertainty associated with occupancy in 3D space using probabilistic regression methods.          </p>
           <p>
-            We provide extensive quantitative and qualitative evaluation on localization and mapping performance with ground truth localization provided by an underwater motion capture system and reference mapping provided by a 3D CAD model of the experimental site with and without wave conditions. Our contribution include detailed description of integrated hardware and we provide open-source software supporting future implementation and extension for the research community.
+            A fusion mechanism is developed to combine information from measurement and predictive uncertainty for modeling occupancy uncertainty.          </p>
+          <p>
+            We provide an experimental evaluation in both simulation and real-world underwater environments to validate the proposed methods.         </p>
         </div>
       </div>
     </div>
@@ -309,7 +309,7 @@
 <!-- Results section -->
 
 
-
+<!-- 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
@@ -320,7 +320,7 @@
       year={2024},
 }</code></pre>
   </div>
-</section>
+</section> -->
 
 <!-- cite nerfies project page https://github.com/nerfies/nerfies.github.io -->
 <footer class="footer">
